@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+if /usr/bin/is_fullscreen.py; then
+    echo command returned true     
+    /usr/bin/xtrlock
+else
+    echo command returned some error
+    /usr/bin/lock
+fi
